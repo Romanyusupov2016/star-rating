@@ -1,0 +1,46 @@
+/* Reset style */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: 0;
+    padding: 50px;
+    background-color: #18191c;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    color: #2e9aff;
+    font-size: 5em;
+    line-height: 1;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus,
+button:hover ~ button,
+button:focus ~ button {
+    color: #f498ad;
+    outline: none;
+}
+
+.star-rating {
+    direction: rtl;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 30px;
+    }
+
+    button {
+        font-size: 3em;
+    }
+
+    .star-rating {
+        white-space: nowrap;
+    }
+}
